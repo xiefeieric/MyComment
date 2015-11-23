@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.FlashActivity">
+    tools:context="uk.me.feixie.mycomment.activity.WelcomeActivity">
 
-    <ImageView
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpWelcome"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/guide_welcome"/>
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
 
-    <ProgressBar
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
+        android:id="@+id/btWelcome"
+        android:background="@drawable/guide_button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="62dp"/>
+        android:visibility="gone"
+        android:layout_marginBottom="80dp"/>
 
 </RelativeLayout>
